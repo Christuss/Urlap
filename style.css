@@ -1,7 +1,12 @@
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: darkseagreen;
 }
 main {
+    width: 70%;
+    margin: 10px auto;
     display: grid;
     gap: 10px;
     grid-template-columns: 4fr 1fr;
@@ -14,15 +19,35 @@ main {
 }
 header {
     grid-area:h;
+    background-image: url(wallpaper.jpg);
+    padding-top: 25%;
+    padding-left: 20px;
+    color: aqua;
 }
 article {
     grid-area:a;
+    height: 50vh;
 }
 nav {
     grid-area:n;
 }
 footer {
     grid-area:f;
+}
+fieldset {
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid teal;
+}
+legend {
+    width: 30%;
+    background-color: aquamarine;
+}
+#kuldes {
+    text-align: center;
+}
+#kuldes input{
+    box-shadow: 1px 1px 3px 3px;
 }
 @media all and (max-width: 1000px) {
     main {

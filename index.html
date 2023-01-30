@@ -16,13 +16,46 @@
         </header>
         <br>
         <article>
-            <form action="#" method="get">
-                <label for="vNev">Vezetéknév: </label>
-                <input type="text" id="vNev" name="vezetekNev">
-                <label for="kNev">Keresztnév: </label>
-                <input type="text" id="vNev" name="keresztNev">
-                <input type="submit" name="Küldés">
-            </form>
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend>Adatok</legend>
+                        <label for="vNev">Vezetéknév: </label>
+                        <input type="text" id="vNev" name="vezetekNev"> <br>
+                        <label for="kNev">Keresztnév: </label>
+                        <input type="text" id="vNev" name="keresztNev"> <br>
+                        <div id="kuldes">
+                        <input type="submit" name="Küldés">
+                        </div>
+                    </fieldset>
+                </form>
+
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend>valami</legend>
+                        <label for="vlmi1">valami: </label>
+                        <input type="text" id="vlmiInpt1" name="vlmiInpt1"> <br>
+                        <label for="vlmi2">valami: </label>
+                        <input type="text" id="vlmiInpt2" name="vlmiInpt2"> <br>
+                        <h2>valami</h2>
+                        <input type="radio" name="vlmiRdo1" id="vlmiRdo1" checked>
+                        <label for="vlmiRdo1">valami</label> <br>
+                        <input type="radio" name="vlmiRdo2" id="vlmiRdo2">
+                        <label for="vlmiRdo2">valami</label> <br>
+                        <input type="radio" name="vlmiRdo3" id="vlmiRdo3">
+                        <label for="vlmiRdo3">valami</label>
+                        <h2>valami2</h2>
+                        <input type="checkbox" name="vlmiChckbx" id="vlmiChckbx">
+                        <label for="vlmiChckbx">valami</label> <br>
+                        <input type="checkbox" name="vlmiChckbx2" id="vlmiChckbx2">
+                        <label for="vlmiChckbx2">valami</label> <br>
+                        <h2>valami 3</h2>
+                        <input type="range"  id="favNumber" value="50" oninput="this.form.amountInput.value=this.value">
+                        <input type="number" name="amountInput" id="num" min="0" max="100" value="50" oninput="this.form.favNumber.value=this.value">
+                        <div id="kuldes">
+                        <input type="submit" name="Küldés">
+                        </div>
+                    </fieldset>
+                </form>
         </article>
         <nav>
             <ul>
